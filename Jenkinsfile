@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        TARGET_HOST = '13.232.23.68'
+        TARGET_HOST = '13.208.147.90'
         SSH_USER = 'ec2-user'
         SSH_CREDENTIALS_ID = 'ec2-access'
     }
@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/chinabudhi123/webhook-project-1.git'
+                git branch: 'main', url: 'https://github.com/vaibhav0060/webhook-project-1.git'
             }
         }
 
